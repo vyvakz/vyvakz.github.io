@@ -13,7 +13,7 @@
     data: {
       labels: [
         'Launch Pool',
-        '1st Weekly Trades[11.11.21]',
+        '1st Weekly Trades[11-11-21]',
         '2nd Weekly Trades',
         '3rd Weekly Trades',
         '4th Weekly Trades',
