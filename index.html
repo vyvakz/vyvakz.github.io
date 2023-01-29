@@ -55,7 +55,7 @@
 
   <link href="./assets/styles/basemodule.css" rel="stylesheet">
   <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LdBZawgAAAAAGZZ281HuVpjTg5jbeVZSDK6ki7J"></script> -->
-  
+  <script src=" https://cdn.polyfill.io/v2/polyfill.js?features=IntersectionObserver"></script>
   <style type="text/css">
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
   </style>
@@ -86,17 +86,14 @@
 
       <div>
 
-        <a class="flex font-smf text-3xl  font-extrabold text-white " href="#">
+        <a class="flex font-smf text-3xl  font-extrabold text-white js-show-on-scroll" href="#" data-animate-type="motion-safe:animate-fade-right">
           <title>BaseModule - Anything as a Service (AaaS)</title>
           <img alt="logo" class="w-full  h-14" src="./assets/images/logo/basemodule-logo-black.png">
 
-          <span class="mt-3 text-transparent bg-clip-text bg-gradient-to-b from-primary2 to-primary1 js-show-on-scroll"
-            data-animate-type="motion-safe:animate-fade-right"></span>
+         
         </a>
 
       </div>
-
-
 
       <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="flex-none h-6 w-6 cursor-pointer lg:hidden block"
         fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -142,7 +139,7 @@
             </div>
 
           </li>
-     
+
 
 
           <!-- <li>
@@ -222,8 +219,9 @@
     </div>
 
   </section>
-  <section class="body-font py-10" id="about-section">
-    <div class="container mx-auto flex px-16 py-12 lg:flex-row flex-col items-center  shadow-lg shadow-black rounded-lg  bg-white bg-opacity-75  backdrop-saturate-150 ">
+  <section class="body-font py-10 js-show-on-scroll" id="about-section" data-animate-type="motion-safe:animate-fade">
+    <div
+      class="container mx-auto flex px-16 py-12 lg:flex-row flex-col items-center  shadow-lg shadow-black rounded-lg  bg-white bg-opacity-75  backdrop-saturate-150 ">
       <div
         class="lg:flex-grow lg:w-1/2 lg:pr-24 md:pr-16 flex flex-col lg:items-start lg:text-left mb-16 lg:mb-0 items-center text-center">
         <h1
@@ -254,16 +252,14 @@
 
 
   </section>
-  <section class="body-font" id="product-section">
-    <div class="container px-5 py-12 mb-16 mx-auto  shadow-lg shadow-black rounded-lg  bg-white bg-opacity-75  backdrop-saturate-150">
+  <section class="body-font js-show-on-scroll" id="product-section" data-animate-type="motion-safe:animate-fade"> 
+    <div
+      class="container px-5 py-12 mb-16 mx-auto  shadow-lg shadow-black rounded-lg  bg-white bg-opacity-75  backdrop-saturate-150">
       <div class="flex flex-wrap -m-4 ">
-        <div
-          class="p-4    w-full js-show-on-scroll"
-          data-animate-type="motion-safe:animate-fade-up">
+        <div class="p-4    w-full js-show-on-scroll" data-animate-type="motion-safe:animate-fade-up">
 
           <div class="flex flex-col text-center w-full">
-            <h1
-              class=" mb-1 font-bold text-black sm:text-3xl">
+            <h1 class=" mb-1 font-bold text-black sm:text-3xl">
               We are currently Invite-Only</h1>
           </div>
           <div class="lg:w-1/2 md:w-2/3 mx-auto  ">
@@ -315,7 +311,7 @@
               <li>
                 <a class="text-primary1 hover:text-primary4">XaaS</a>
               </li>
-            
+
             </ul>
           </nav>
         </div>
@@ -382,7 +378,8 @@
     <div class="bg-black">
       <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
         <p class="text-gray-500 text-sm text-center sm:text-left">© 2021 <span
-            class=" font-bold text-transparent bg-clip-text bg-gradient-to-b from-primary1 to-primary2">BASEMODULE</span>. All rights reserved.
+            class=" font-bold text-transparent bg-clip-text bg-gradient-to-b from-primary1 to-primary2">BASEMODULE</span>.
+          All rights reserved.
 
         </p>
         <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
@@ -407,8 +404,7 @@
               <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
             </svg>
           </a>
-          <a class="ml-3 text-gray-500 hover:text-primary1" href=""
-            aria-label="Linkedin">
+          <a class="ml-3 text-gray-500 hover:text-primary1" href="" aria-label="Linkedin">
             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
               stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
               <path stroke="none"
@@ -494,6 +490,21 @@
 
     //Animation Start
 
+     // Start of IntersectionObserver
+
+    // small polyfill for Microsoft Edge 15 isIntersecting property
+    // see https://github.com/WICG/IntersectionObserver/issues/211#issuecomment-309144669
+    if ('IntersectionObserver' in window &&
+      'IntersectionObserverEntry' in window &&
+      'intersectionRatio' in window.IntersectionObserverEntry.prototype &&
+      !('isIntersecting' in IntersectionObserverEntry.prototype)) {
+
+      Object.defineProperty(window.IntersectionObserverEntry.prototype, 'isIntersecting', {
+        get: function () {
+          return this.intersectionRatio > 0
+        }
+      })
+    }
 
     // Callback for IntersectionObserver
     const callback = function (entries) {
@@ -505,6 +516,9 @@
 
           // Add the fadeIn class:
           entry.target.classList.add(animationType);
+
+           // show the element
+           //target.classList.remove("opacity-0");
         } else {
 
           // Otherwise remove the fadein class
@@ -517,21 +531,23 @@
     const targets = document.querySelectorAll(".js-show-on-scroll");
 
     // Set up a new observer
-    const observer = new IntersectionObserver(callback);
+    let observer = new IntersectionObserver(callback,{
+      rootMargin: "-150px"
+    });
 
     // Loop through each of the target
     targets.forEach(function (target) {
       // Hide the element
-      target.classList.add("opacity-0");
+      //target.classList.add("opacity-0");
 
       // Add the element to the watcher
       observer.observe(target);
     });
-
-
-
+    
 
     
+    //EOF IntersectionObserver
+
 
     //Recaptcha
 
