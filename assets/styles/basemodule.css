@@ -2044,6 +2044,10 @@ video {
   --tw-bg-opacity: 0.5;
 }
 
+.bg-opacity-75 {
+  --tw-bg-opacity: 0.75;
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -2313,6 +2317,26 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .pt-4 {
@@ -3175,6 +3199,11 @@ video {
 .hover\:text-primary1:hover {
   --tw-text-opacity: 1;
   color: rgb(46 197 240 / var(--tw-text-opacity));
+}
+
+.hover\:text-primary4:hover {
+  --tw-text-opacity: 1;
+  color: rgb(240 90 37 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-xl:hover {
