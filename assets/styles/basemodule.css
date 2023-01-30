@@ -3533,6 +3533,14 @@ video {
 }
 
 @media (min-width: 400px) {
+  .xs\:block {
+    display: block;
+  }
+
+  .xs\:hidden {
+    display: none;
+  }
+
   .xs\:text-\[20px\] {
     font-size: 20px;
   }
@@ -3589,6 +3597,14 @@ video {
 
   .sm\:mt-0 {
     margin-top: 0px;
+  }
+
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:w-1\/2 {
