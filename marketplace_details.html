@@ -1,0 +1,508 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./assets/images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+
+  <title>BASEMODULE - AaaS (Anything as a Services)</title>
+  <meta name="description" content="BasedModule Anything as a Service Marketplace" />
+  <meta name="author" content="BASEMODULE" />
+
+  <!-- Twitter tags -->
+  <meta name="twitter:title" content="BasedModule Anything as a Service" />
+  <meta name="twitter:description" content="BasedModule Anything as a Service" />
+  <meta name="twitter:site" content="@basemodule" />
+  <meta name="twitter:creator" content="@iih_uae" />
+  <meta property="twitter:image" content="https://www.basemodule.com/assets/images/logo/logo_black.png" />
+  <meta property="twitter:image:width" content="1200" />
+  <meta property="twitter:image:height" content="1200" />
+
+  <!-- Open Graph / Facebook tags-->
+  <meta name="og:title" content="BasedModule Anything as a Service" />
+  <meta name="og:description" content="BasedModule Anything as a Service" />
+  <meta property="og:url" content="https://www.basemodule.com" />
+  <meta property="og:site_name" content="BaseModule" />
+  <meta property="og:image" content="ttps://www.basemodule.com/assets/images/logo/logo_black.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="1200" />
+
+  <meta property="og:type" content="Website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <link href="./assets/styles/basemodule.css" rel="stylesheet">
+  <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LdBZawgAAAAAGZZ281HuVpjTg5jbeVZSDK6ki7J"></script> -->
+  <script src=" https://cdn.polyfill.io/v2/polyfill.js?features=IntersectionObserver"></script>
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+  </style>
+</head>
+<!-- class="dark:bg-gray-800 dark:text-gray-200" -->
+
+<body
+  class="bg-dtheme xs:text-[20px] xs:leading-[27px] text-[16px] leading-[23px] font-normal text-gray-600 transition-colors duration-200 ease-in-out"
+  style="background: repeating-linear-gradient(315deg, #00FFFF2E 92%, #073AFF00 100%),repeating-radial-gradient(75% 75% at 238% 218%, #00FFFF12 30%, #073AFF14 39%),radial-gradient(99% 99% at 109% 2%, #00C9FFFF 0%, #073AFF00 100%),radial-gradient(99% 99% at 21% 78%, #7B00FFFF 0%, #073AFF00 100%),radial-gradient(160% 154% at 711px -303px, #2000FFFF 0%, #073AFFFF 100%);">
+
+
+  <header>
+    <nav class="
+         flex flex-wrap
+         items-center
+         justify-between
+         w-full
+         py-4
+         lg:py-0
+         px-4
+         fixed
+         top-0
+         z-10
+         shadow-md  
+         shadow-black             
+         bg-dnav  
+       ">
+
+      <div>
+
+        <a class="flex font-smf text-3xl  font-extrabold text-white js-show-on-scroll" href="#"
+          data-animate-type="motion-safe:animate-fade-right">
+          <title>BaseModule - Anything as a Service (AaaS)</title>
+          <img alt="logo" class="w-full  h-14 sm:block hidden" src="./assets/images/logo/basemodule-logo-black.png">
+          <img alt="logo" class="w-full  h-14 sm:hidden block" src="./assets/images/logo/logo_black.png">
+
+
+        </a>
+
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="flex-none h-6 w-6 cursor-pointer lg:hidden block"
+        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+
+      <div class="hidden w-full lg:flex lg:place-items-start lg:w-auto" id="menu">
+        <ul class="
+             pt-4
+             text-base 
+             font-semibold
+             lg:flex
+             lg:justify-between 
+             lg:pt-0
+             js-show-on-scroll
+            " data-animate-type="motion-safe:animate-fade-left">
+          <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8">
+              <a class=" hover:text-primary2 focus:text-primary1" href="#home-section" id="home">
+                <h2 class=" title-font mt-4 text-lg">Home</h2>
+
+              </a>
+              <div id="menu1-underline" class="w-full h-1 bg-primary1 mb-4"></div>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8 ">
+              <a class="hover:text-primary2 focus:text-primary1" href="#about-section" id="about">
+                <h2 class=" title-font mt-4 text-lg">About <span
+                    class=" text-transparent bg-clip-text bg-gradient-to-b from-primary1 to-primary2">BASEMODULE</span>
+                </h2>
+              </a>
+              <div id="menu2-underline" class="w-full h-1 bg-primary1  mb-4 hidden "></div>
+            </div>
+
+          </li>
+          <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8">
+              <a class="hover:text-primary2 focus:text-primary1" href="#product-section" id="product">
+                <h2 class=" title-font mt-4 text-lg">Request Access</h2>
+              </a>
+              <div id="menu3-underline" class="w-full h-1 bg-primary1  mb-4 hidden"></div>
+            </div>
+
+          </li>
+
+
+
+          <!-- <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8">
+              <button id="colorswitch" name="colorswitch" aria-label="Change Theme"
+                class="items-center mt-4 bg-gray-100 border-0 py-1 px-1 focus:outline-none hover:bg-gray-800 dark:hover:bg-gray-200  rounded-full text-base  dark:bg-gray-800 dark:text-gray-100 ">
+                <svg id="icon-contrast" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6 w-6" viewBox="0 0 20 20"
+                  enable-background="new 0 0 20 20" xml:space="preserve">
+                  <path d="M10,20C4.5,20,0,15.5,0,10S4.5,0,10,0s10,4.5,10,10S15.5,20,10,20z M10,2c-4.4,0-8,3.6-8,8s3.6,8,8,8s8-3.6,8-8S14.4,2,10,2
+                          z" />
+                  <path fill="#ea3970" class="contrast" d="M10,4v12c3.3,0,6-2.7,6-6S13.3,4,10,4z" />
+                </svg>
+
+              </button>
+
+            </div>
+          </li> !-->
+        </ul>
+
+      </div>
+
+
+    </nav>
+
+
+
+  </header>
+
+
+
+  <!-- Alert section start -->
+  <!--
+  <div id="mainAlert" class="text-center py-4 lg:px-4  my-14">
+    <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+      <span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">New</span>
+      <span class="font-semibold mr-2 text-left flex-auto"></span>
+      <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+     
+        <svg class="fill-current h-6 w-6 text-pribg-primary1" role="button" onclick="closeAlert('mainAlert')" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
+     
+    </div>
+  </div>
+  -->
+  <!-- Alert section end -->
+
+  <!--Hero Section start-->
+
+  <!--background-image: 
+  radial-gradient(at 0% 0%, hsla(0,0%,9%,1) 0, transparent 50%), 
+  radial-gradient(at 50% 0%, hsla(350,96%,43%,1) 0, transparent 50%), 
+  radial-gradient(at 100% 0%, hsla(0,0%,9%,1) 0, transparent 50%);-->
+
+  <section class="text-white body-font">
+    <div class="container mx-auto flex px-5 pt-24 items-center justify-center flex-col">
+      <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded shadow-black shadow-lg" alt="hero"
+        src="./assets/images/aeic.jpg">
+      <div class="text-center lg:w-2/3 w-full">
+        <h1 class="title-font sm:text-4xl text-xl mb-4 font-bold ">AEIC Service Offerings</h1>
+        <p class="mb-8 leading-relaxed">All the services provided here are validated and in contractual terms with the AEIC partner network.</p>
+        <div class="flex justify-center">
+          <button
+            class="inline-flex text-white bg-primary2 border-0 py-2 px-6 focus:outline-none hover:bg-primary1 rounded text-lg">Join AEIC Partner Program</button>
+         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+
+      <div class="flex flex-wrap -m-4">
+   
+        <stripe-pricing-table pricing-table-id="prctbl_1MYnl2CcXgKHe9Ujc8rzQp9y"
+        publishable-key="pk_live_51MHhtECcXgKHe9UjUyOCbYs0bVELmVxbGcisX1RjEsXDwrsvY8kf8BuuzR9gjOBUil0PzdZ6H4P2qZ7eWHCGFQ7i00X8Xyipar">
+        </stripe-pricing-table>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer Start -->
+  <footer class=" body-font border-t border-dborder shadow-inner text-white">
+    <div
+      class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center ">
+
+
+          <span
+            class=" text-3xl font-bold h-10 text-transparent bg-clip-text bg-gradient-to-b from-primary1 to-primary2">BASEMODULE</span>
+        </a>
+        <p class="mt-2 text-sm ">Anything as a Service Marketplace. </p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center text-sm">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium  tracking-widest text-base mb-3">Products</h2>
+          <nav class="list-none mb-10">
+            <ul>
+              <li>
+                <a class="text-primary1 hover:text-primary4">XaaS</a>
+              </li>
+
+            </ul>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium  tracking-widest text-base mb-3">Company</h2>
+          <nav class="list-none mb-10">
+            <ul>
+              <li>
+                <a class="text-primary1 hover:text-primary4">About</a>
+              </li>
+              <li>
+                <a class="text-primary1 hover:text-primary4">Careers</a>
+              </li>
+              <li>
+                <a class="text-primary1 hover:text-primary4">Partnership </a>
+              </li>
+              <li>
+                <a class="text-primary1 hover:text-primary4"
+                  href="mailto:investor@basemodule.com?subject=Investment Details&body=Please send me a copy of your Investment program!">Investors</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium  tracking-widest text-base mb-3">Resources</h2>
+          <nav class="list-none mb-10">
+            <ul>
+              <li>
+                <a class="text-primary1 hover:text-primary4" hre="#">Support</a>
+              </li>
+              <li>
+                <a class="text-primary1 hover:text-primary4">Feedback</a>
+              </li>
+              <li>
+                <a class="text-primary1 hover:text-primary4" href="#">Branding</a>
+              </li>
+              <li>
+                <a class="text-primary1 hover:text-primary4" href="#">Blog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium  tracking-widest text-base mb-3">Policies</h2>
+          <nav class="list-none mb-10">
+            <ul>
+              <li>
+                <a class="text-primary1 hover:text-primary4">Terms</a>
+              </li>
+              <li>
+                <a class="text-primary1 hover:text-primary4">Privacy</a>
+              </li>
+              <li>
+                <a class="text-primary1 hover:text-primary4">Credits</a>
+              </li>
+              <li>
+                <a class="text-primary1 hover:text-primary4">Licenses</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-black">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2021 <span
+            class=" font-bold text-transparent bg-clip-text bg-gradient-to-b from-primary1 to-primary2">BASEMODULE</span>.
+          All rights reserved.
+
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-gray-500 hover:text-primary1" href="" aria-label="Facebook">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500 hover:text-primary1" href="" aria-label="Twitter">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500 hover:text-primary1" href="" aria-label="Instagram">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500 hover:text-primary1" href="" aria-label="Linkedin">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+          <!--
+          <a class="ml-3 text-gray-500 hover:text-primary1" href="https://discord.gg/AfBAUMxT5G" aria-label="Discord">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 16 15">
+              <path
+                d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z" />
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>-->
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+
+
+
+    function closeAlert(id) {
+      let element = document.getElementById(id);
+      element.remove();
+    }
+    const button = document.querySelector('#menu-button');
+    const menu = document.querySelector('#menu');
+
+
+    button.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+
+    const menu0 = document.querySelector('#home');
+    menu0.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      hideUnderline('#menu1-underline');
+      var anchor = document.querySelector('#hoome-section');
+      anchor.scrollIntoView();
+
+
+    });
+
+
+    const menu1 = document.querySelector('#about');
+    menu1.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      hideUnderline('#menu2-underline');
+      var anchor = document.querySelector('#about-section');
+      anchor.scrollIntoView();
+
+
+    });
+
+    const menu2 = document.querySelector('#product');
+    menu2.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      hideUnderline('#menu3-underline');
+      var anchor = document.querySelector('#product-section');
+      anchor.scrollIntoView();
+
+
+    });
+
+
+
+
+    function hideUnderline(selected_menu) {
+      for (var i = 1; i <= 3; i++) {
+        var menu_underline = document.querySelector('#menu' + i + '-underline');
+        menu_underline.classList.add('hidden');
+      }
+      var menu_underline = document.querySelector(selected_menu);
+      menu_underline.classList.remove('hidden');
+    }
+
+
+    //Animation Start
+
+    // Start of IntersectionObserver
+
+    // small polyfill for Microsoft Edge 15 isIntersecting property
+    // see https://github.com/WICG/IntersectionObserver/issues/211#issuecomment-309144669
+    if ('IntersectionObserver' in window &&
+      'IntersectionObserverEntry' in window &&
+      'intersectionRatio' in window.IntersectionObserverEntry.prototype &&
+      !('isIntersecting' in IntersectionObserverEntry.prototype)) {
+
+      Object.defineProperty(window.IntersectionObserverEntry.prototype, 'isIntersecting', {
+        get: function () {
+          return this.intersectionRatio > 0
+        }
+      })
+    }
+
+    // Callback for IntersectionObserver
+    const callback = function (entries) {
+      entries.forEach(entry => {
+        const animationType = entry.target.dataset.animateType;
+
+        // Is the element in the viewport?
+        if (entry.isIntersecting) {
+
+          // Add the fadeIn class:
+          entry.target.classList.add(animationType);
+
+          // show the element
+          //target.classList.remove("opacity-0");
+        } else {
+
+          // Otherwise remove the fadein class
+          entry.target.classList.remove(animationType);
+        }
+      });
+    };
+
+    // Get all the elements you want to show on scroll
+    const targets = document.querySelectorAll(".js-show-on-scroll");
+
+    // Set up a new observer
+    let observer = new IntersectionObserver(callback, {
+      rootMargin: "-150px"
+    });
+
+    // Loop through each of the target
+    targets.forEach(function (target) {
+      // Hide the element
+      //target.classList.add("opacity-0");
+
+      // Add the element to the watcher
+      observer.observe(target);
+    });
+
+
+
+    //EOF IntersectionObserver
+
+
+    //Recaptcha
+
+    /*
+    grecaptcha.ready(function () {
+      grecaptcha.execute('6LdBZawgAAAAAGZZ281HuVpjTg5jbeVZSDK6ki7J', { action: 'submit' }).then(function (token) {
+        // Add your logic to submit to your backend server here.
+
+        console.log('TOKEN', token);
+        document.getElementById('tokenF').value = token;
+      });
+    });
+*/
+
+
+  </script>
+
+<script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+
+  <!-- <script type="text/javascript" src="./assets/scripts/connect.js"> </script> -->
+</body>
+
+</html>
