@@ -97,10 +97,13 @@
 
       </div>
 
-      <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="flex-none h-6 w-6 cursor-pointer lg:hidden block"
-        fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
+    <label for="check" class="menuButton flex-none h-6 w-6 cursor-pointer lg:hidden block" id="menu-button">
+        <input id="check" type="checkbox">
+        <span class="top"></span>
+        <span class="mid"></span>
+        <span class="bot"></span>
+    </label>
+
 
       <div class="hidden w-full lg:flex lg:place-items-start lg:w-auto" id="menu">
         <ul class="
@@ -3117,7 +3120,7 @@
     const button = document.querySelector('#menu-button');
 
 
-    button.addEventListener('click', () => {
+    button.addEventListener('change', () => {
       menu.classList.toggle('hidden');
     });
 
